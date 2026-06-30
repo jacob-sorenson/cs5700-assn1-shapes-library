@@ -6,8 +6,8 @@ class Triangle(point1: Point, point2: Point, point3: Point): Shape() {
     private val point3: Point = point3.clone()
 
     init {
-        require(point1 != point2 || point1 != point3 || point2 != point3){
-            "Triangle must have the unique points for each corner"
+        require(getArea() > 0.0){
+            "Triangle points must not be collinear"
         }
 
     }
