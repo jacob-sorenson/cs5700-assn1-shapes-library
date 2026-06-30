@@ -9,6 +9,10 @@ out/
 .kotlin/
 *.class
 
+### Gradle ###
+.gradle/
+build/
+
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -33,3 +37,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Windows ###
+Thumbs.db
+desktop.ini
