@@ -11,7 +11,7 @@ class Line(point1: Point, point2: Point) {
         require(this.point1.getX() != this.point2.getX() && this.point1.getY() != this.point2.getY()) {
             "Line points cannot be the same"
         }
-        
+
     }
 
     fun getPoint1(): Point {
@@ -23,9 +23,8 @@ class Line(point1: Point, point2: Point) {
     }
 
     fun getSlope(): Double {
-
-        var diffY = point2.getY() - point1.getY()
-        var diffX = point2.getX() - point1.getX()
+        val diffY = point2.getY() - point1.getY()
+        val diffX = point2.getX() - point1.getX()
         if (diffX <= 0.0){
             return 0.0
         } else {
