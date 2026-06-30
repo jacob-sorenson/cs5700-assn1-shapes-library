@@ -1,10 +1,5 @@
 plugins {
     kotlin("jvm") version "2.3.20"
-    application
-}
-
-kotlin {
-    jvmToolchain(21) // This ensures everything compiles nicely with Java 21
 }
 
 group = "org.example"
@@ -16,6 +11,10 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+}
+
+kotlin {
+    jvmToolchain(25)
 }
 
 tasks.test {
